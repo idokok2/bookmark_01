@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav">
+        <!-- 신규 사이트 입력 -->
+        <form action="addlink.php" method="POST" class="addlink">
+          <textarea name="name" id="addname" cols="20" rows="1" placeholder="사이트명"></textarea>
+          <textarea name="url" id="addurl" cols="20" rows="1" placeholder="URL"></textarea>
+          <input type="submit" class="btn_add"></input>
+        </form>
+
+        <!-- <div class="navlist"> -->
+
+        <ul class="list">
+          <li class="item" id="고려대">
+            <button class="btn_remove">DEL</button>
+            <span class="site_name">고려대</span>
+            <span class="url">https://www.korea.ac.kr</span>
+          </li>
+          <li class="item" id="연세대">
+            <button class="btn_remove">DEL</button>
+            <span class="site_name">연세대</span>
+            <span class="url">https://www.yonsei.ac.kr/sc/</span>
+          </li>
+        </ul>
+        <span>20200629_14:50</span>
+        <!-- </div> -->
+      </div>
+      <div class="viewpage">
+        <embed id="url" src="https://www.korea.ac.kr" type="text/html" />
+      </div>
+    </div>
+
+    <div></div>
+  </body>
+</html>
